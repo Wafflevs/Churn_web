@@ -18,7 +18,7 @@ try:
     print("pipeline cargada")
     st.write("pipeline cargada")
 except Exception as e:
-    print(f"Error al cargar el pipeline {e}")
+    print(f'Error al cargar el pipeline {e}')
     
 
 with open(model_path, "rb") as file2:
@@ -28,7 +28,7 @@ try:
     print("modelo Cargado")
     st.write("modelo cargado")
 except Exception as e:
-    print("error al cargar modelo {e}")
+    print(f'error al cargar modelo {e}')
 
 with open(encoder_path, "rb") as file3:
     print(file3.read(100))
@@ -37,7 +37,7 @@ try:
     print("codificador cargado")
     st.write("encoder cargado")
 except Exception as e:
-    print("fallo al cargar el encoder {e}")
+    print(f"fallo al cargar el encoder {e}")
 
 
 ###################################################################
