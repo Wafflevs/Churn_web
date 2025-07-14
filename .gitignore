@@ -1,0 +1,7 @@
+# Ignorar dataset
+*.csv
+
+# Ignorar carpeta del entorno virtual
+env/
+venv/
+.env/
