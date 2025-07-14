@@ -33,7 +33,8 @@ try:
     print("modelo Cargado")
     st.write("modelo cargado")
 except Exception as e:
-    print(f"error al cargar modelo: {e}")
+    print(f"Error al cargar modelo: {e}")
+    st.error(f"Error al cargar modelo: {e}")
 
 
 with open(encoder_path, "rb") as file3:
