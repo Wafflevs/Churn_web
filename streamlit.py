@@ -2,11 +2,16 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import os
 st.set_page_config(page_title="TeleCos Churn", layout="wide")
 
 pipeline_path = "artefactos/preprocessor/preprocessor.pkl"
 model_path = "artefactos/model/XGBoost.pkl"
 encoder_path = "artefactos/preprocessor/label_encoder.pkl"
+
+st.write("Directorio actual:", os.getcwd())
+st.write("Archivos en artefactos/model:", os.listdir("artefactos/model"))
+st.write("Existe modelo:", os.path.exists(model_path))
 
 
 with open(pipeline_path, "rb") as file1:
