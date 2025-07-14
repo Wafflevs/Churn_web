@@ -24,7 +24,7 @@ except Exception as e:
 with open(model_path, "rb") as file2:
     print(file2.read(100))
 try:
-    model = joblib.load(model_path)
+    modelo = joblib.load(model_path)
     print("modelo Cargado")
     st.write("modelo cargado")
 except Exception as e:
@@ -105,7 +105,7 @@ if st.button("Predecir Churn"):
         
     st.dataframe(input_data)
     pipeline_data = pipeline.transform(input_data)
-    prediction = model.predict(pipeline_data)
+    prediction = modelo.predict(pipeline_data)
 
 
     if prediction[0] == 1:
