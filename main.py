@@ -38,7 +38,7 @@ print(df['TotalCharges'].isnull().sum())
 df.dropna(subset= ['TotalCharges'], inplace=True)
 print(df['TotalCharges'].isnull().sum())
 
-df.drop(['customerID'], axis=1, inplace=True)  #We eliminate customerID because is irrelevant for this analisys
+df.drop(['customerID'], axis=1, inplace=True)  #We eliminate customerID because is irrelevant for this analysis
 print(df.head())
 def plot_Churn_distribution(df):
     plt.figure(figsize=(10,5))
